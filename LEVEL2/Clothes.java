@@ -22,10 +22,9 @@ class Clothes {
         }
                           
         for(String i : count.keySet()){ 
-            // 옷의 종류 개수 + (옷의 종류 개수 * 현재까지 결과값)
-            answer += count.get(i) + (count.get(i)*answer);
+            answer *= count.get(i)+1; //(종류 수 + 안입는 경우의 수) * ... 
         }   
                           
-    return answer;
+    return answer-1;    //아무것도 안입는건 안되니 -1
     }
 }
