@@ -5,7 +5,7 @@
   각 사진에 찍힌 인물의 이름을 담은 이차원 문자열 배열 photo가 매개변수로 주어질 때, 
   사진들의 추억 점수를 photo에 주어진 순서대로 배열에 담아 return하는 solution 함수를 완성해주세요.
 */
-public class Solution {
+public class MemoryScore {
     public int[] solution(String[] name, int[] yearning, String[][] photo) {
         int[] answer = new int[photo.length];  //사진 점수 배열
       
