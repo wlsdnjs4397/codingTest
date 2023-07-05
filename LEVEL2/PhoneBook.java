@@ -7,6 +7,7 @@ import java.util.HashMap;
 
 class PhoneBook {
     public boolean solution(String[] phone_book) {
+        //Hash값으로 비교하면 일반 문자열 비교보다 효율성이 높다.
         HashMap<String, Integer> hm = new HashMap<String, Integer>();
         
         for(int i=0; i<phone_book.length; i++){ 
